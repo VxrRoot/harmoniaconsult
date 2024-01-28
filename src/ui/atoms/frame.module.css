@@ -1,0 +1,5 @@
+.frame {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 100%, 90% 10%, 0 10%);
+  width: 80px;
+  height: 80px;
+}

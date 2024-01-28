@@ -1,4 +1,5 @@
 import AboutUsSection from "@/ui/sections/AboutUsSection/AboutUsSection";
+import ContactSection from "@/ui/sections/ContactSection/ContactSection ";
 import FAQSection from "@/ui/sections/FAQSection/FAQSection";
 import HeroSection from "@/ui/sections/HeroSection/HeroSection";
 import ServicesSection from "@/ui/sections/ServicesSection/ServicesSection";
@@ -20,6 +21,7 @@ export default function Home() {
       <AboutUsSection />
       <ServicesSection />
       <FAQSection />
+      <ContactSection />
     </main>
   );
 }

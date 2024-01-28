@@ -44,8 +44,8 @@ const faqItems: { question: string; answear: string }[] = [
 const AccordionFAQ = () => {
   return (
     <Accordion type="single" collapsible>
-      {faqItems.map((item) => (
-        <AccordionItem value={item.question}>
+      {faqItems.map((item, idx) => (
+        <AccordionItem key={`${item.question}-${idx}`} value={item.question}>
           <AccordionTrigger>{item.question}</AccordionTrigger>
           <AccordionContent>{item.answear}</AccordionContent>
         </AccordionItem>

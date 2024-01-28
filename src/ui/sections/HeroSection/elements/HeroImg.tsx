@@ -8,8 +8,8 @@ const HeroImg = () => {
     <Image
       alt="hero-image"
       src={heroImage}
-      className="object-cover object-right-top w-full h-full opacity-0 transition-opacity duration-300"
-      onLoadingComplete={(img) => img.classList.remove("opacity-0")}
+      className="object-cover object-right-top w-full h-full opacity-0 transition-all duration-300 -ml-96"
+      onLoadingComplete={(img) => img.classList.remove("opacity-0", "-ml-96")}
     />
   );
 };

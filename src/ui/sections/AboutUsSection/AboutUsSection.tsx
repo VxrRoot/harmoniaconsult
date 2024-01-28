@@ -1,6 +1,5 @@
 import React from "react";
-import ImageAboutUs from "../../assets/about-us-img.jpg";
-import Image from "next/image";
+import SectionImg from "./elements/SectionImg";
 
 const AboutUsSection = () => {
   return (
@@ -26,11 +25,7 @@ const AboutUsSection = () => {
           </p>
         </div>
         <div className="lg:grow lg:w-1/2">
-          <Image
-            alt="about-us-image"
-            className="w-full mt-8 object-cover h-[400px] lg:h-[800px]"
-            src={ImageAboutUs}
-          />
+          <SectionImg />
           <div className="bg-gradient-to-r from-yellow-600 to-yellow-900 h-2 w-40 my-6 ml-auto" />
         </div>
       </div>

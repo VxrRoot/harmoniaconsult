@@ -1,16 +1,10 @@
-import React from "react";
-import Image from "next/image";
-import heroImage from "../../assets/hero-img-2.jpg";
+import HeroImg from "./elements/HeroImg";
 
 const HeroSection = () => {
   return (
     <section className="flex flex-col lg:h-[800px] justify-between lg:flex-row">
-      <section className="w-full h-[400px] lg:h-full flex-grow relative">
-        <Image
-          alt="hero-image"
-          src={heroImage}
-          className="object-cover object-right-top w-full h-full"
-        />
+      <section className="bg-black w-full h-[400px] lg:h-full flex-grow relative">
+        <HeroImg />
       </section>
       <section className="bg-black w-full text-white flex-grow pt-10 px-4 pb-10 lg:flex lg:flex-col lg:justify-center lg:h-[800px] lg:px-10">
         <div className="bg-gradient-to-r to-yellow-600 from-yellow-900 h-2 w-40 mb-6" />

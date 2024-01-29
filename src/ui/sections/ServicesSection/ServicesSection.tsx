@@ -27,7 +27,7 @@ const services: { id: number; name: string; desc: string; icon: any }[] = [
 const ServicesSection = () => {
   return (
     <section className="max-w-7xl mx-auto h-fit relative px-4 lg:mt-10">
-      <h2 className="font-bold text-3xl text-center lg:text-5xl mb-4">
+      <h2 className="font-bold text-3xl text-center lg:text-4xl mb-4">
         Nasze usługi
       </h2>
       <div className="absolute left-2 -rotate-90">

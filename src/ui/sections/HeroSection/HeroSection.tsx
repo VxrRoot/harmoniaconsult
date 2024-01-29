@@ -1,4 +1,5 @@
 import HeroImg from "./elements/HeroImg";
+import styles from "../../atoms/frame.module.css";
 
 const HeroSection = () => {
   return (
@@ -7,7 +8,9 @@ const HeroSection = () => {
         <HeroImg />
       </section>
       <section className="bg-black w-full text-white flex-grow pt-10 px-4 pb-10 lg:flex lg:flex-col lg:justify-center lg:h-[800px] lg:px-10">
-        <div className="bg-gradient-to-r to-yellow-600 from-yellow-900 h-2 w-40 mb-6" />
+        <div
+          className={`${styles.gradient_bg} bg-gradient-to-r to-yellow-600 from-yellow-900 h-2 w-40 mb-6`}
+        />
         <h1 className="text-3xl leading-10 pr-5 max-w-xl lg:text-5xl lg:pr-3 lg:leading-tight">
           Doświadcz Harmonii w biurokracji i prawie. Twoje rozwiązania w
           Holandii.

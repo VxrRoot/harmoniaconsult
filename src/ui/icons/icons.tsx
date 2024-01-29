@@ -48,3 +48,68 @@ export const BuildingIcon = () => (
     <path d="M12 7.875a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z" />
   </svg>
 );
+
+export const MessageIcon: React.FC = () => (
+  <svg
+    width="29"
+    height="29"
+    viewBox="0 0 29 29"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M24.4333 5.33203H5.23325C4.28392 5.33203 3.45872 5.85573 3.07014 6.61019C3.17817 6.63653 3.28363 6.68147 3.38191 6.74596L14.8333 14.2609L26.2846 6.74596C26.3829 6.68147 26.4883 6.63653 26.5964 6.6102C26.2078 5.85574 25.3826 5.33203 24.4333 5.33203ZM26.8333 8.77812L15.3819 16.2931C15.0488 16.5117 14.6177 16.5117 14.2846 16.2931L2.83325 8.77812V21.082C2.83325 22.3195 3.91325 23.332 5.23325 23.332H24.4333C25.7533 23.332 26.8333 22.3195 26.8333 21.082V8.77812Z"
+      fill="#ca8a04"
+    />
+  </svg>
+);
+
+export const FacebookIcon: React.FC = () => (
+  <svg
+    width="29"
+    height="29"
+    viewBox="0 0 29 29"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M25 0.665039H4C2.06975 0.665039 0.5 2.23479 0.5 4.16504V25.165C0.5 27.0953 2.06975 28.665 4 28.665H14.5V19.04H11V14.665H14.5V11.165C14.5 8.26529 16.8503 5.91504 19.75 5.91504H23.25V10.29H21.5C20.534 10.29 19.75 10.199 19.75 11.165V14.665H24.125L22.375 19.04H19.75V28.665H25C26.9303 28.665 28.5 27.0953 28.5 25.165V4.16504C28.5 2.23479 26.9303 0.665039 25 0.665039Z"
+      fill="#2A89FE"
+    />
+  </svg>
+);
+
+export const ChevronIcon: React.FC = () => (
+  <svg
+    width="16"
+    height="16"
+    viewBox="0 0 20 20"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M7.5 5L12.5 10L7.5 15"
+      stroke="#ca8a04"
+      strokeWidth="3"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+export const NewsletterIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke-width="1.5"
+    stroke="currentColor"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
+    />
+  </svg>
+);

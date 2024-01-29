@@ -1,3 +1,21 @@
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient_bg {
+  background: linear-gradient(270deg, #eab308, #713f12, #ca8a04);
+  background-size: 400% 400%;
+  animation: gradientBG 5s ease infinite;
+}
+
 .frame {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 100%, 90% 10%, 0 10%);
   width: 80px;

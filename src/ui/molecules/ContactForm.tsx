@@ -2,7 +2,7 @@
 import React from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import { z } from "zod";
+import { any, z } from "zod";
 import {
   Form,
   FormControl,
@@ -33,6 +33,7 @@ const formSchema = z.object({
       message: "Wypełniij to pole",
     })
     .max(255),
+  file: z.any(),
 });
 
 const ContactForm = () => {
@@ -100,6 +101,24 @@ const ContactForm = () => {
               <FormLabel>Opis sprawy</FormLabel>
               <FormControl>
                 <Textarea placeholder="Potrzebuję pomocy z..." {...field} />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="file"
+          render={({ field }) => (
+            <FormItem className="cursor-pointer">
+              <FormLabel>Załączniki (opcjonalne)</FormLabel>
+              <FormControl>
+                <Input
+                  className="cursor-pointer"
+                  type="file"
+                  onChange={field.onChange}
+                  onBlur={field.onBlur}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>

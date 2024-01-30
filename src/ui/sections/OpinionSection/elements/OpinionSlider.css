@@ -1,0 +1,38 @@
+.splide__pagination__page {
+  background-color: #fef08a;
+  opacity: 1;
+}
+
+.splide__pagination__page.is-active {
+  background-color: #ca8a04;
+}
+
+.slider__arrow {
+  position: absolute;
+  /* left: 20px; */
+  bottom: 30px;
+  width: 10px;
+  height: 10px;
+  z-index: 10;
+}
+
+.slider__arrow:disabled {
+  opacity: 0.5;
+}
+
+.slider__arrow svg {
+  width: 20px;
+  fill: black;
+}
+
+.slider__arrow--prev {
+  transform: rotate(180deg);
+  bottom: 0;
+  left: 20px;
+  z-index: 10;
+}
+
+.slider__arrow--next {
+  /* left: calc(100% - 32px) !important; */
+  right: 20px !important;
+}

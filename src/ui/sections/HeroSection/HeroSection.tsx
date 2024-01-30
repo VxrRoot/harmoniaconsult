@@ -1,5 +1,6 @@
 import HeroImg from "./elements/HeroImg";
 import styles from "../../atoms/frame.module.css";
+import CtaButton from "./elements/CtaButton";
 
 const HeroSection = () => {
   return (
@@ -20,9 +21,7 @@ const HeroSection = () => {
           urzędowych i prawnych. Dzięki naszej wiedzy i doświadczeniu, możesz
           pokonać biurokrację bez stresu.
         </h2>
-        <button className="bg-gradient-to-r from-yellow-900 to-yellow-600 text-white font-semibold py-3 px-6 rounded-md mt-8 shadow-md max-w-40">
-          Napisz do nas
-        </button>
+        <CtaButton />
       </section>
     </section>
   );

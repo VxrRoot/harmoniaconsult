@@ -2,6 +2,7 @@ import AboutUsSection from "@/ui/sections/AboutUsSection/AboutUsSection";
 import ContactSection from "@/ui/sections/ContactSection/ContactSection ";
 import FAQSection from "@/ui/sections/FAQSection/FAQSection";
 import HeroSection from "@/ui/sections/HeroSection/HeroSection";
+import OpinionSection from "@/ui/sections/OpinionSection/OpinionSection";
 import ServicesSection from "@/ui/sections/ServicesSection/ServicesSection";
 import { Metadata } from "next";
 
@@ -16,12 +17,13 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="">
+    <div className="">
       <HeroSection />
       <AboutUsSection />
       <ServicesSection />
       <FAQSection />
       <ContactSection />
-    </main>
+      <OpinionSection />
+    </div>
   );
 }

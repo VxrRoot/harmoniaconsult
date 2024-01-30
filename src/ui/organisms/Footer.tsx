@@ -1,6 +1,11 @@
 import React from "react";
 import styles from "./footer.module.css";
-import { ChevronIcon, FacebookIcon, MessageIcon } from "../icons/icons";
+import {
+  ChevronIcon,
+  FacebookIcon,
+  InstaIcon,
+  MessageIcon,
+} from "../icons/icons";
 import Link from "next/link";
 import { links } from "@/constants";
 import Newsletter from "../molecules/Newsletter";

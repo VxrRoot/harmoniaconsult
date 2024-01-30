@@ -5,7 +5,7 @@ import SectionImg from "./elements/SectionImg";
 
 const ContactSection = () => {
   return (
-    <section className="max-w-7xl mx-auto py-20 px-4">
+    <section className="max-w-7xl mx-auto py-20 px-4" id="contact">
       <h2 className="font-bold text-3xl text-center lg:text-4xl mb-20">
         Czekamy na Twoją wiadomość
       </h2>

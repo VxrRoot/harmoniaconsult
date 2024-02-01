@@ -1,9 +1,12 @@
 "use client";
-import React, { useRef } from "react";
-import Image from "next/image";
-import heroImg from "../../../../assets/services-img.jpg";
+import React, { FC, useRef } from "react";
+import Image, { StaticImageData } from "next/image";
 
-const HeroImage = () => {
+interface IPageHeroImage {
+  img: StaticImageData;
+}
+
+const HeroImage: FC<IPageHeroImage> = ({ img }) => {
   const imgRef = useRef<HTMLImageElement>(null);
 
   return (
@@ -11,7 +14,7 @@ const HeroImage = () => {
       ref={imgRef}
       className="lg:h-[500px] h-[300px] brightness-50 grayscale object-cover absolute object-center opacity-0 transition-opacity duration-300"
       alt="zdjęcie hero strony uslugi"
-      src={heroImg}
+      src={img}
       onLoad={() => imgRef?.current?.classList.remove("opacity-0")}
     />
   );

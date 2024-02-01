@@ -10,7 +10,6 @@ const SectionImg = () => {
     <Image
       ref={imgRef}
       alt="about-us-image"
-      priority
       className="w-full mt-8 object-cover h-[400px] lg:h-[800px] opacity-0 duration-300 transition-opacity"
       src={ImageAboutUs}
       onLoad={() => imgRef?.current?.classList.remove("opacity-0")}

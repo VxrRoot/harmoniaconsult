@@ -1,12 +1,12 @@
 import React from "react";
-
+import heroImg from "../../assets/services-img.jpg";
 import FAQSection from "@/ui/sections/FAQSection/FAQSection";
-import HeroSection from "@/ui/sections/Services-HeroSection/HeroSection";
+import PageHeroSection from "@/ui/sections/PageHeroSection/PageHeroSection";
 
 const page = () => {
   return (
     <section>
-      <HeroSection />
+      <PageHeroSection image={heroImg} title="NASZE USŁUGi" />
       <section></section>
       <FAQSection />
     </section>

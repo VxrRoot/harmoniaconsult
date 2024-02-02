@@ -6,6 +6,7 @@
 # Pliki produkcyjne
 /.next/
 /out/
+/.env
 
 # Pliki cache
 /.cache/
@@ -13,6 +14,7 @@
 
 # Pliki konfiguracyjne środowiska
 .env.local
+.env
 .env.development.local
 .env.test.local
 .env.production.local

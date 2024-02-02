@@ -1,25 +1,23 @@
-import React from "react";
-import styles from "./footer.module.css";
-import {
-  ChevronIcon,
-  FacebookIcon,
-  InstaIcon,
-  MessageIcon,
-} from "../icons/icons";
-import Link from "next/link";
 import { links } from "@/constants";
+import Image from "next/image";
+import Link from "next/link";
+import logo from "../../assets/harmonia-logo.png";
+import { ChevronIcon, FacebookIcon, MessageIcon } from "../icons/icons";
 import Newsletter from "../molecules/Newsletter";
+import styles from "./footer.module.css";
 
 const Footer = () => {
   return (
     <footer className="bg-black flex flex-col">
       <div className="max-w-7xl px-4 mx-auto py-12 w-full text-white flex flex-col lg:flex-row">
         <div className=" lg:basis-1/4 py-4">
-          <div>LOGO</div>
+          <Link href={links.homePage} className="-m-1.5 p-1.5">
+            <Image alt="logo" src={logo} height={65} />
+          </Link>
           <div className="">
             <a
               href="mailto:example@example.com"
-              className="flex items-center gap-2 mt-2 w-fit"
+              className="flex items-center gap-2 -ml-[2px] mt-2 w-fit"
             >
               <MessageIcon />
               <span className="hover:underline transition-all">

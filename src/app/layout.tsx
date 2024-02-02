@@ -1,3 +1,4 @@
+import { Toaster } from "@/components/ui/toaster";
 import Footer from "@/ui/organisms/Footer";
 import Header from "@/ui/organisms/header";
 import type { Metadata } from "next";
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className={`${inter.className}`}>
         <Header />
         <main className="min-h-screen">{children}</main>
+        <Toaster />
         <Footer />
       </body>
     </html>

@@ -1,9 +1,9 @@
 import { IFullBlogPost } from "@/lib/interface";
 import { client, urlFor } from "@/lib/sanity";
-import PageHeroSection from "@/ui/sections/PageHeroSection/PageHeroSection";
-import React from "react";
-import Image from "next/image";
 import { PortableText } from "@portabletext/react";
+import Image from "next/image";
+
+export const revalidate = 86400;
 
 // Komponent dla obrazów
 const ImageComponent = ({ value }: any) => {

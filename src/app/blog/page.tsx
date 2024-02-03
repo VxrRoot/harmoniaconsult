@@ -16,6 +16,8 @@ import { links } from "@/constants";
 import Link from "next/link";
 import Frame from "@/ui/atoms/frame";
 
+export const revalidate = 86400;
+
 async function getPosts() {
   const query = `*[_type == "blog"] | order(_createdAt desc) {
     id,

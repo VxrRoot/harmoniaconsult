@@ -24,6 +24,18 @@ export async function POST(req: Request) {
       to: SMTP_EMAIL,
       subject: `Nowa wiadomość od ${email} - ze strony harmoniaconsult`,
       html: `siema test ${username} ${surname} ${phone}`,
+      attachments: [
+        {
+          filename: "zalacznik1",
+          path: `${file}`, // Dla lokalnych plików
+        },
+        {
+          // Przykład załącznika jako Buffer
+          filename: "document.pdf",
+          content: Buffer.from("Zawartość pliku", "utf-8"),
+          contentType: "application/pdf",
+        },
+      ],
     });
 
     console.log("Message sent: %s", info.messageId);

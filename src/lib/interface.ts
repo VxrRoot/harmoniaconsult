@@ -11,4 +11,5 @@ export interface IFullBlogPost {
   title: string;
   content: any;
   titleImage: any;
+  smallDescription: string;
 }

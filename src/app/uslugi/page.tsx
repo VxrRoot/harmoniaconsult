@@ -4,8 +4,13 @@ import FAQSection from "@/ui/sections/FAQSection/FAQSection";
 import PageHeroSection from "@/ui/sections/PageHeroSection/PageHeroSection";
 import ContactSection from "@/ui/sections/ContactSection/ContactSection ";
 import ServicesSection from "@/ui/sections/Services-ServicesSection/ServicesSection";
+import { Metadata } from "next";
 
-const page = () => {
+export const metadata: Metadata = {
+  title: "Nasze usługi",
+};
+
+const ServicesPage = () => {
   return (
     <section>
       <PageHeroSection image={heroImg} title="NASZE USŁUGi" />
@@ -16,4 +21,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default ServicesPage;

@@ -37,7 +37,7 @@ const formSchema = z.object({
       message: "Wypełniij to pole",
     })
     .max(255),
-  file: z.any(),
+  // file: z.any(),
 });
 
 const ContactForm = () => {
@@ -51,7 +51,7 @@ const ContactForm = () => {
       text: "",
       email: "",
       phone: "",
-      file: "",
+      // file: "",
     },
   });
 
@@ -66,7 +66,7 @@ const ContactForm = () => {
     });
 
     // Dodaj plik, jeśli istnieje
-    if (values.file.length > 0) {
+    if (values.file) {
       formData.append("file", values.file[0]);
     }
 
@@ -159,7 +159,7 @@ const ContactForm = () => {
             </FormItem>
           )}
         />
-        <FormField
+        {/* <FormField
           control={form.control}
           name="file"
           render={({ field }) => (
@@ -176,9 +176,10 @@ const ContactForm = () => {
               <FormMessage />
             </FormItem>
           )}
-        />
+        /> */}
         <button
           type="submit"
+          aria-label="wyslij formularz"
           className={`bg-gradient-to-r from-yellow-900 to-yellow-600 text-white font-semibold py-3 px-14  rounded-md mt-8 shadow-md max-w-40`}
         >
           Wyślij

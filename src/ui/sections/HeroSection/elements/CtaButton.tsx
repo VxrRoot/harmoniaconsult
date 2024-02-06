@@ -12,6 +12,7 @@ const CtaButton = () => {
   return (
     <button
       onClick={scrollToContact}
+      aria-label="Napisz do nas"
       className="bg-gradient-to-r from-yellow-900 to-yellow-600 text-white font-semibold py-3 px-6 rounded-md mt-8 shadow-md max-w-40"
     >
       Napisz do nas

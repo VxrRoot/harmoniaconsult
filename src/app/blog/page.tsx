@@ -15,22 +15,10 @@ import Image from "next/image";
 import { links } from "@/constants";
 import Link from "next/link";
 import Frame from "@/ui/atoms/frame";
+import { getPosts } from "@/lib/query";
+import blogImg from "../../assets/single-blog-post.svg";
 
 export const revalidate = 86400;
-
-async function getPosts() {
-  const query = `*[_type == "blog"] | order(_createdAt desc) {
-    id,
-    title,
-    smallDescription,
-    "currentSlug": slug.current,
-    titleImage
-  }`;
-
-  const data = await client.fetch(query);
-
-  return data;
-}
 
 const BlogPage = async () => {
   const data: ISimplyBlogCard[] = await getPosts();
@@ -52,14 +40,16 @@ const BlogPage = async () => {
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-8 lg:gap-4 gap-8">
           {data.map((post) => {
             return (
-              <Suspense fallback={<p>Loading...</p>}>
-                <Card key={post.id} className="cursor-pointer">
+              <Suspense key={post.id} fallback={<p>Loading...</p>}>
+                <Card className="cursor-pointer">
                   <Image
-                    src={urlFor(post.titleImage).url()}
+                    src={
+                      post.titleImage ? urlFor(post.titleImage).url() : blogImg
+                    }
                     alt="Post img"
                     width={500}
                     height={500}
-                    className="object-cover rounded-t-lg h-[200px] object-center"
+                    className="object-cover w-full rounded-t-lg h-[200px] object-center"
                   />
                   <CardHeader>
                     <CardTitle>{post.title}</CardTitle>

@@ -18,7 +18,6 @@ const opinions: { text: string; author: string }[] = [
 
 const OpinionSlider = () => {
   const splideRef = useRef<Splide | null>(null);
-  const [activeIndex, setActiveIndex] = useState(0);
 
   const splideOptions = {
     arrows: true,

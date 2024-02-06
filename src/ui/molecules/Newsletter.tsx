@@ -21,7 +21,10 @@ const Newsletter = () => {
         type="email"
         className="bg-transparent text-white  m-0 border  border-yellow-600 border-r-0 rounded-none"
       />
-      <button className="bg-gradient-to-r from-yellow-900 to-yellow-600 border border-l-0 border-yellow-600 text-white h-10 w-10 px-2">
+      <button
+        aria-label="zapisz sie na newsletter"
+        className="bg-gradient-to-r from-yellow-900 to-yellow-600 border border-l-0 border-yellow-600 text-white h-10 w-10 px-2"
+      >
         <NewsletterIcon />
       </button>
     </div>

@@ -40,8 +40,8 @@ const Footer = () => {
         <div className="flex-grow py-4">
           <p className="text-2xl p-0 font-bold pb-2">Nawigacja</p>
           <nav>
-            <ul className="flex flex-col lg:flex-row">
-              <div>
+            <div className="flex flex-col lg:flex-row">
+              <ul>
                 <li className="py-2">
                   <Link
                     className="hover:text-yellow-600 transition-all flex items-center"
@@ -74,8 +74,8 @@ const Footer = () => {
                     <ChevronIcon /> Zatrzymane prawo jazdy
                   </Link>
                 </li>
-              </div>
-              <div className="lg:ml-8">
+              </ul>
+              <ul className="lg:ml-8">
                 <li className="py-2">
                   <Link
                     className="hover:text-yellow-600 transition-all flex items-center"
@@ -92,8 +92,8 @@ const Footer = () => {
                     <ChevronIcon /> Regulamin
                   </Link>
                 </li>
-              </div>
-            </ul>
+              </ul>
+            </div>
           </nav>
         </div>
         <div className="flex-grow py-4">

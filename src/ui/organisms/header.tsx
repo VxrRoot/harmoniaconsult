@@ -52,6 +52,7 @@ export default function Header() {
         <div className="flex lg:hidden">
           <button
             type="button"
+            aria-label="otworz menu"
             className={`-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white ${styles.text}`}
             onClick={() => setMobileMenuOpen(true)}
           >
@@ -114,6 +115,7 @@ export default function Header() {
               <Image alt="logo" src={logo} height={65} />
             </Link>
             <button
+              aria-label="otworz menu"
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-white"
               onClick={() => setMobileMenuOpen(false)}

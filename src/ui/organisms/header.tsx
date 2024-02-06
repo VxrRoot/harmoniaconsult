@@ -46,7 +46,7 @@ export default function Header() {
       >
         <div className="flex lg:flex-1">
           <Link href={links.homePage} className="-m-1.5 p-1.5">
-            <Image alt="logo" src={logo} height={65} />
+            <Image alt="logo" priority src={logo} height={65} />
           </Link>
         </div>
         <div className="flex lg:hidden">

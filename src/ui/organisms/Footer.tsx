@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="max-w-7xl px-4 mx-auto py-12 w-full text-white flex flex-col lg:flex-row">
         <div className=" lg:basis-1/4 py-4">
           <Link href={links.homePage} className="-m-1.5 p-1.5">
-            <Image alt="logo" src={logo} height={65} />
+            <Image alt="logo" src={logo} priority height={65} />
           </Link>
           <div className="">
             <a

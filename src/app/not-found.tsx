@@ -7,7 +7,13 @@ import IconSVG from "../assets/not-found.svg";
 const NotFoundPage = () => {
   return (
     <div className="pb-20 pt-40 mx-auto max-w-7xl flex justify-center items-center flex-col">
-      <Image src={IconSVG} alt="Not found svg" width={500} height={500} />
+      <Image
+        priority
+        src={IconSVG}
+        alt="Not found svg"
+        width={500}
+        height={500}
+      />
       <Link
         href={links.homePage}
         className="bg-gradient-to-r from-yellow-900 to-yellow-600 text-white font-semibold py-3 px-6 rounded-md mt-8 shadow-md max-w-60"

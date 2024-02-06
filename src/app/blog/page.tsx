@@ -52,10 +52,13 @@ const BlogPage = async () => {
                     className="object-cover w-full rounded-t-lg h-[200px] object-center"
                   />
                   <CardHeader>
-                    <CardTitle>{post.title}</CardTitle>
+                    <CardTitle>{`${post.title.substring(0, 20)}...`}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <CardDescription>{post.smallDescription}</CardDescription>
+                    <CardDescription>{`${post.smallDescription.substring(
+                      0,
+                      140
+                    )}...`}</CardDescription>
                   </CardContent>
                   <CardFooter>
                     <Link

@@ -7,8 +7,15 @@ import ServicesSection from "@/ui/sections/ServicesSection/ServicesSection";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Harmonia Consult",
-  description: "...",
+  title: "Harmonia Consult - Doradztwo dla Polaków w Holandii",
+  description:
+    "Harmonia Consult oferuje profesjonalne doradztwo i wsparcie dla Polaków mieszkających w Holandii. Zyskaj pomoc w rozwoju zawodowym, integracji kulturowej oraz kwestiach prawnych.",
+  openGraph: {
+    type: "website",
+    title: "Harmonia Consult - Doradztwo dla Polaków w Holandii",
+    description:
+      "Profesjonalne doradztwo i wsparcie dla Polaków w Holandii. Pomagamy w rozwoju kariery, integracji oraz sprawach administracyjnych i prawnych.",
+  },
 };
 
 export default function Home() {

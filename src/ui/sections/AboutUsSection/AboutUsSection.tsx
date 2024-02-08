@@ -10,12 +10,6 @@ const AboutUsSection = () => {
       <div className="flex flex-col lg:flex-row">
         <div className="lg:w-1/2 flex justify-center items-center flex-col gap-12 px-4 lg:px-10 lg:pl-0  text-md lg:text-xl ">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-            quam adipisci, ratione voluptatum error aliquam odio dicta, dolor
-            soluta eos natus aliquid esse. Aliquid animi minima beatae
-            explicabo, tenetur similique.
-          </p>
-          <p>
             Naszym celem jest umożliwienie naszym klientom skutecznego i
             bezproblemowego załatwiania formalności. Gwarantujemy szybkie i
             efektywne rozwiązywanie spraw. Dzięki naszemu doświadczeniu i

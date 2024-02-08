@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import Image from "next/image";
-import heroImage from "../../../../assets/hero-img-2.jpg";
+import heroImage from "../../../../assets/hero-img.jpg";
 
 const HeroImg = () => {
   const imgRef = useRef<HTMLImageElement>(null);

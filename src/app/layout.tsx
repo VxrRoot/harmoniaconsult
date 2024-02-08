@@ -3,6 +3,7 @@ import Footer from "@/ui/organisms/Footer";
 import Header from "@/ui/organisms/header";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -32,6 +33,7 @@ export default function RootLayout({
         <main className="min-h-screen">{children}</main>
         <Toaster />
         <Footer />
+        <GoogleTagManager gtmId={"GTM-5RXXLX2K"} />
       </body>
     </html>
   );

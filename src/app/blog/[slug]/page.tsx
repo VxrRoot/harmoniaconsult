@@ -10,7 +10,7 @@ import { ArrowLeftIcon } from "@heroicons/react/24/outline";
 import blogImg from "../../../assets/single-blog-post.svg";
 import { notFound } from "next/navigation";
 
-export const revalidate = 86400;
+export const revalidate = 600;
 
 export async function generateMetadata({
   params,

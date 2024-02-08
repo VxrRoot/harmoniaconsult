@@ -21,7 +21,7 @@ const Footer = () => {
             >
               <MessageIcon />
               <span className="hover:underline transition-all">
-                example@example.com
+                info@harmoniaconsult.nl
               </span>
             </a>
             <a

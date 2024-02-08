@@ -20,7 +20,8 @@ export async function getPosts() {
         title,
         smallDescription,
         "currentSlug": slug.current,
-        titleImage
+        titleImage,
+        publishedAt
       }`;
 
   const data = await client.fetch(query);

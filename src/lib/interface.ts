@@ -4,6 +4,7 @@ export interface ISimplyBlogCard {
   smallDescription: string;
   currentSlug: string;
   titleImage: { _type: "image"; asset: any };
+  publishedAt: any;
 }
 
 export interface IFullBlogPost {

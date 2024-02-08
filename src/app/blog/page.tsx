@@ -18,7 +18,7 @@ import Frame from "@/ui/atoms/frame";
 import { getPosts } from "@/lib/query";
 import blogImg from "../../assets/single-blog-post.svg";
 
-export const revalidate = 600;
+export const revalidate = 30;
 
 const BlogPage = async () => {
   const data: ISimplyBlogCard[] = await getPosts();

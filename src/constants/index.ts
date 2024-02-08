@@ -8,3 +8,5 @@ export const links = {
   privacyPolicy: "/polityka-prywatnosci",
   terms: "/regulamin",
 };
+
+export const siteUrl = "https://harmoniaconsult.pl";

@@ -1,3 +1,4 @@
+import { siteUrl } from "@/constants";
 import AboutUsSection from "@/ui/sections/AboutUsSection/AboutUsSection";
 import ContactSection from "@/ui/sections/ContactSection/ContactSection ";
 import FAQSection from "@/ui/sections/FAQSection/FAQSection";
@@ -10,7 +11,11 @@ export const metadata: Metadata = {
   title: "Harmonia Consult - Doradztwo dla Polaków w Holandii",
   description:
     "Harmonia Consult oferuje profesjonalne doradztwo i wsparcie dla Polaków mieszkających w Holandii. Zyskaj pomoc w rozwoju zawodowym, integracji kulturowej oraz kwestiach prawnych.",
+  alternates: {
+    canonical: siteUrl,
+  },
   openGraph: {
+    url: siteUrl,
     type: "website",
     title: "Harmonia Consult - Doradztwo dla Polaków w Holandii",
     description:

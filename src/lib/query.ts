@@ -11,8 +11,6 @@ export async function getSinglePost(slug: string) {
 
   const data = await client.fetch(query);
 
-  console.log(data);
-
   return data;
 }
 

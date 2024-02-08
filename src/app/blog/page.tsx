@@ -6,19 +6,27 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { links, siteUrl } from "@/constants";
 import { ISimplyBlogCard } from "@/lib/interface";
-import { client, urlFor } from "@/lib/sanity";
-import PageHeroSection from "@/ui/sections/PageHeroSection/PageHeroSection";
-import React, { Suspense } from "react";
-import heroImg from "../../assets/blog-page-img.jpg";
-import Image from "next/image";
-import { links } from "@/constants";
-import Link from "next/link";
-import Frame from "@/ui/atoms/frame";
 import { getPosts } from "@/lib/query";
+import { urlFor } from "@/lib/sanity";
+import Frame from "@/ui/atoms/frame";
+import PageHeroSection from "@/ui/sections/PageHeroSection/PageHeroSection";
+import { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import { Suspense } from "react";
+import heroImg from "../../assets/blog-page-img.jpg";
 import blogImg from "../../assets/single-blog-post.svg";
 
 export const revalidate = 600;
+
+export const metadata: Metadata = {
+  title: "Kontakt",
+  alternates: {
+    canonical: `${siteUrl}${links.blog}`,
+  },
+};
 
 const BlogPage = async () => {
   const data: ISimplyBlogCard[] = await getPosts();

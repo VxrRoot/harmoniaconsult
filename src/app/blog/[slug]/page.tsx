@@ -37,8 +37,6 @@ export async function generateStaticParams() {
 const BlogPostPage = async ({ params }: { params: { slug: string } }) => {
   const data: IFullBlogPost = await getSinglePost(params.slug);
 
-  console.log(data);
-
   if (!data) {
     notFound();
   }
